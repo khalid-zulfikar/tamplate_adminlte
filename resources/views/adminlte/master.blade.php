@@ -29,7 +29,11 @@
   
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    @yield('content')
+    <div class="card">
+     <div class="card-body">
+      @yield('content')
+     </div>
+    </div>
   </div>
   <!-- /.content-wrapper -->
 
@@ -58,7 +62,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('/adminlte/dist/js/demo.js')}}"></script>
 
-@stack('script')
+@stack('scripts')
 
 </body>
 </html>
